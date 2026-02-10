@@ -13,14 +13,18 @@ header {
     display: flex;
     gap: 20px;
     margin-right: 200px;
+    height: 50px;
+    width: 1000px;
+    align-items: center;
+    
 }
 
 .headerloginbutn{
     margin-left: 150px;
-    border: 1px solid;
+    border: 2px solid rgb(0, 0, 0);
 }
 .headerbutn{
-    border: 1px solid;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .headeranchor{
@@ -30,9 +34,9 @@ header {
 .headerpages a {
     text-decoration: none;
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
@@ -70,7 +74,7 @@ footer{
 /* Main img part styles */
 #mainimg{
     border-radius: 15px;
-    width: 1480px;
+    width: 1870px;
     margin-left: 12px;
     margin-top: 15px;
 }
@@ -125,10 +129,9 @@ footer{
 }
 
 .product-container{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    margin-left: 50px;
-    column-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     row-gap: 30px;
 }
 
@@ -281,9 +284,11 @@ textarea:focus {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.contact-form{
-    margin-left: 610px;
-    font-size: large;
+
+
+.con-form {
+    display: flex;
+    justify-content: center;
 }
 
 .contactform-inputs{
@@ -1578,11 +1583,9 @@ textarea:focus {
         width: auto;
         text-align: center;
         height: auto;
+    
     }
-
-    #productcard-last19{
-        margin-left: 1.5px;
-    }
+    
 
     #latestproducts-hr{
         margin-bottom: 20px;
@@ -1594,17 +1597,11 @@ textarea:focus {
         flex-direction: column;
         margin-bottom: 20px;
     }
-
-    #productcard-last20{
-        margin-left: 1.5px;
-    }
     
     .product-container{
         display: flex;
         row-gap: 10px;
         flex-direction: column;
-        margin-left: 0.5px;
-        column-gap: 5px;
         row-gap: 30px;
     }
     
@@ -1617,6 +1614,8 @@ textarea:focus {
     .productcard-p{
         font-size: 10px;
     }
+
+
 
     .products-img{
         height: 100px;
